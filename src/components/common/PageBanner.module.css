@@ -1,0 +1,35 @@
+.banner {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-blue) 100%);
+  color: var(--color-white);
+  padding: var(--spacing-xl) 0;
+  border-bottom: 3px solid var(--color-blue);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: inherit;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-light-blue);
+}
+
+/* ==========================================================================
+   High Contrast Mode Overrides
+   ========================================================================== */
+:global(html.high-contrast) .banner {
+  background: #000000 !important;
+  background-image: none !important;
+  border-bottom: 3px solid #ffff00 !important;
+}
+
+:global(html.high-contrast) .title {
+  color: #ffffff !important;
+}
+
+:global(html.high-contrast) .subtitle {
+  color: #ffff00 !important;
+}

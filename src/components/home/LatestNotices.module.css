@@ -1,0 +1,18 @@
+.section {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.actionRow {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+}

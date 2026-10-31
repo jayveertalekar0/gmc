@@ -1,0 +1,23 @@
+.backToTop {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 998;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border: 2px solid var(--color-white);
+}
+
+.backToTop:hover {
+  background-color: var(--color-blue);
+  transform: translateY(-2px);
+}

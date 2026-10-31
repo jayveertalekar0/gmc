@@ -1,0 +1,77 @@
+.card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--color-blue);
+  box-shadow: 0 4px 12px rgba(9, 45, 85, 0.06);
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #fde8e8;
+  color: #e53e3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-navy);
+  text-decoration: none;
+}
+
+.title:hover {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.meta {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-light-blue);
+  color: var(--color-navy);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.downloadBtn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
