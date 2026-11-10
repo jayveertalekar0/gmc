@@ -3,6 +3,7 @@
   background-color: var(--color-navy);
   padding: 10px 16px;
   border-bottom: 2px solid var(--color-blue);
+  width: 100%;
 }
 
 .topBar {
@@ -12,14 +13,15 @@
 }
 
 .brandText {
-  color: var(--color-white);
+  color: #ffffff;
   font-size: var(--font-size-sm);
   font-weight: 600;
 }
 
 .menuButton {
   background-color: var(--color-blue);
-  color: var(--color-white);
+  color: #ffffff;
+  border: none;
   padding: 6px 12px;
   font-size: var(--font-size-sm);
   font-weight: 600;
@@ -37,7 +39,7 @@
   width: 80%;
   max-width: 360px;
   height: 100vh;
-  background-color: var(--color-white);
+  background-color: #ffffff;
   box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
   z-index: 2000;
   transition: right 0.3s ease-in-out;
@@ -55,14 +57,23 @@
   align-items: center;
   padding: 16px;
   background-color: var(--color-navy);
-  color: var(--color-white);
+  color: #ffffff;
+}
+
+.drawerHeader h3 {
+  margin: 0;
+  font-size: 1.15rem;
 }
 
 .closeButton {
-  color: var(--color-white);
-  font-size: 1.25rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
   cursor: pointer;
-  padding: 4px 8px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .drawerBody {
@@ -75,44 +86,76 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.navListItem {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.itemRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navItemLink {
   display: block;
-  padding: 10px 12px;
-  color: var(--color-text-main);
+  flex: 1;
+  padding: 12px 8px;
+  color: var(--color-navy);
   font-weight: 600;
   font-size: var(--font-size-sm);
-  border-bottom: 1px solid var(--color-border);
-  border-radius: 4px;
+  text-decoration: none;
 }
 
 .navItemLink:hover {
-  background-color: var(--color-light-blue);
+  color: var(--color-blue);
+}
+
+.chevronBtn {
+  background: transparent;
+  border: none;
+  padding: 8px;
   color: var(--color-navy);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
 }
 
 .subList {
   list-style: none;
   padding-left: 16px;
-  margin-top: 4px;
+  margin: 0 0 8px 0;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .subItemLink {
   display: block;
-  padding: 6px 10px;
+  padding: 8px 10px;
   color: var(--color-text-secondary);
   font-size: var(--font-size-xs);
   font-weight: 500;
+  text-decoration: none;
 }
 
 .subItemLink:hover {
   color: var(--color-navy);
-  background-color: var(--color-light-blue);
+  background-color: rgba(0, 86, 179, 0.08);
   border-radius: 3px;
 }
 

@@ -1,0 +1,110 @@
+.main {
+  padding-bottom: 5rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.iconBox {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 86, 179, 0.1);
+  color: var(--color-blue);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.subLink {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.committeeSection {
+  margin-top: 4rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.sectionLead {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.committeeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.committeeCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  font-size: 0.9rem;
+}
+
+.committeeIcon {
+  color: var(--color-blue);
+  flex-shrink: 0;
+}
+
+/* High Contrast Mode Overrides */
+:global(html.high-contrast) .card,
+:global(html.high-contrast) .committeeCard {
+  background-color: #000000 !important;
+  border: 1px solid #ffff00 !important;
+  color: #ffffff !important;
+}

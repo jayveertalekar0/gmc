@@ -1,0 +1,62 @@
+[
+  {
+    "id": "anti-ragging",
+    "name": "Anti-Ragging Committee",
+    "head": "Dean / Designated Senior Faculty",
+    "description": "Enforces zero-tolerance anti-ragging regulations, conducts surprise inspections in student hostels, and maintains anti-ragging undertakings from students and parents."
+  },
+  {
+    "id": "curriculum",
+    "name": "Curriculum Committee",
+    "head": "Professor & Academic In-charge",
+    "description": "Monitors implementation of NMC's Competency-Based Medical Education (CBME) timetable, early clinical exposure (ECE), and internal assessment schedules."
+  },
+  {
+    "id": "icc",
+    "name": "Internal Complaints Committee (ICC)",
+    "head": "Presiding Female Faculty Officer",
+    "description": "Mandatory committee under POSH Act ensuring a safe and dignified workplace and academic environment for female students, medical staff, and employees."
+  },
+  {
+    "id": "grievance",
+    "name": "Student Grievance Redressal Committee",
+    "head": "Senior Faculty Advisory Board",
+    "description": "Addresses student grievances concerning academic evaluations, hostel infrastructure, mess facilities, and campus life."
+  },
+  {
+    "id": "pharmacovigilance",
+    "name": "Pharmacovigilance Committee",
+    "head": "Professor & HOD (Pharmacology)",
+    "description": "Monitors, documents, and reports Adverse Drug Reactions (ADRs) occurring within inpatient wards and OPD units to the National Pharmacovigilance Program."
+  },
+  {
+    "id": "ethics",
+    "name": "Institutional Ethics Committee (IEC)",
+    "head": "Independent Ethics Chairperson",
+    "description": "Evaluates and approves research proposals, clinical trials, and ICMR STS projects for human subject ethics compliance."
+  },
+  {
+    "id": "meu",
+    "name": "Medical Education Unit (MEU)",
+    "head": "MEU Coordinator / Dean",
+    "description": "Conducts faculty development workshops, revised basic course workshops in medical education, and teaching pedagogy training."
+  },
+  {
+    "id": "research",
+    "name": "Research Advisory Committee",
+    "head": "Research Board Convener",
+    "description": "Encourages scientific publications, guides postgraduate thesis work, and facilitates institutional research grants."
+  },
+  {
+    "id": "manas",
+    "name": "Student Manas Scheme Committee",
+    "head": "Counseling Cell In-charge",
+    "description": "Provides psychological counseling, peer mentorship, and wellness guidance to help medical students adapt to rigorous academic environments."
+  },
+  {
+    "id": "mental-stress",
+    "name": "Student Mental Stress Relief Committee",
+    "head": "Department of Psychiatry",
+    "description": "Organizes stress management workshops, mindfulness sessions, and 24/7 mental health helpline support for resident doctors and MBBS students."
+  }
+]

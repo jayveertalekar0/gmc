@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { PRIMARY_NAV_ITEMS } from '@/data/navigation';
+import { NAVIGATION_MENU, NavItem } from '@/data/navigation';
 import styles from './MobileNavigation.module.css';
 
 export const MobileNavigation: React.FC = () => {
@@ -42,20 +42,20 @@ export const MobileNavigation: React.FC = () => {
 
         <div className={styles.drawerBody}>
           <ul className={styles.navList}>
-            {PRIMARY_NAV_ITEMS.map((item, idx) => (
-              <li key={item.label}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            {NAVIGATION_MENU.map((item: NavItem, idx: number) => (
+              <li key={`${item.label}-${idx}`} className={styles.navListItem}>
+                <div className={styles.itemRow}>
                   <Link 
                     href={item.href} 
                     className={styles.navItemLink}
-                    onClick={() => { if (!item.children) setIsOpen(false); }}
+                    onClick={() => setIsOpen(true)} // Close drawer on any navigation link click
                   >
                     {item.label}
                   </Link>
                   {item.children && (
                     <button 
                       onClick={() => toggleSubmenu(idx)} 
-                      style={{ padding: '8px', color: 'var(--color-navy)' }}
+                      className={`${styles.chevronBtn} ${expandedIndex === idx ? styles.rotated : ''}`}
                       aria-label={`Toggle ${item.label} Submenu`}
                     >
                       <ChevronDown size={16} />
@@ -65,8 +65,8 @@ export const MobileNavigation: React.FC = () => {
 
                 {item.children && expandedIndex === idx && (
                   <ul className={styles.subList}>
-                    {item.children.map((child) => (
-                      <li key={child.label}>
+                    {item.children.map((child, childIdx) => (
+                      <li key={`${child.label}-${childIdx}`}>
                         <Link 
                           href={child.href} 
                           className={styles.subItemLink}

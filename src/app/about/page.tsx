@@ -1,38 +1,120 @@
-import React from 'react';
-import { PageBanner } from '@/components/common/PageBanner';
-import { Breadcrumb } from '@/components/common/Breadcrumb';
+'use client';
 
-export const metadata = {
-  title: 'About Us | Government Medical College & General Hospital, Baramati',
-  description: 'Learn about the history, vision, mission, and leadership of GMC Baramati.',
-};
+import React, { useEffect } from 'react';
+import Image from 'next/image';
+import { PageBanner } from '@/components/common/PageBanner';
+import { Building2, UserCheck, ShieldCheck, Award, User } from 'lucide-react';
+import aboutData from '@/data/about.json';
+import styles from './about.module.css';
+
+const DEAN_PHOTO_PATH = '/images/leadership/dean-mhaske.jpg';
 
 export default function AboutPage() {
+  // Handle client-side hash scrolling on navigation
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
+
   return (
-    <>
-      <PageBanner 
-        title="About GMC Baramati" 
-        subtitle="Established under the Directorate of Medical Education and Research, Government of Maharashtra" 
+    <main className={styles.main}>
+      <PageBanner
+        title="About the Institution"
+        subtitle="Discover our history, leadership under the Dean's desk, and statutory RTI disclosures."
       />
-      <Breadcrumb items={[{ label: 'About Us', href: '/about' }]} />
 
-      <div className="container" style={{ padding: '3rem 1rem', maxWidth: '900px' }}>
-        <h2 style={{ fontSize: '1.75rem', color: 'var(--color-navy)', marginBottom: '1.5rem' }}>
-          Institution Overview
-        </h2>
-        <p style={{ lineHeight: '1.8', color: 'var(--color-text-main)', marginBottom: '1.5rem' }}>
-          Government Medical College & General Hospital, Baramati is a premier state-funded medical institution committed to delivering exceptional healthcare services, advanced medical training, and clinical research. Located in Baramati, Pune district, the college offers undergraduate (MBBS) and postgraduate medical training under the affiliation of Maharashtra University of Health Sciences (MUHS), Nashik and recognition by the National Medical Commission (NMC).
-        </p>
+      <div className="container">
+        {/* Section 1: Institutional Overview */}
+        <section id="overview" className={styles.section}>
+          <div className={styles.badge}>Established {aboutData.overview.established}</div>
+          <h2 className={styles.sectionTitle}>{aboutData.overview.title}</h2>
+          <p className={styles.lead}>{aboutData.overview.description}</p>
 
-        <h3 style={{ fontSize: '1.25rem', color: 'var(--color-navy)', marginTop: '2rem', marginBottom: '1rem' }}>
-          Vision & Mission
-        </h3>
-        <ul style={{ paddingLeft: '1.5rem', lineHeight: '1.8', color: 'var(--color-text-main)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          <li><strong>Excellence in Education:</strong> Fostering rigorous academic curricula paired with hands-on clinical exposure in our teaching hospital.</li>
-          <li><strong>Accessible Healthcare:</strong> Providing affordable, high-quality tertiary healthcare services to rural and urban communities across Pune and neighboring regions.</li>
-          <li><strong>Ethical Practice:</strong> Instilling unwavering medical ethics, empathy, and professional integrity in every student.</li>
-        </ul>
+          <div className={styles.highlightsGrid}>
+            <div className={styles.highlightCard}>
+              <Building2 size={22} className={styles.icon} />
+              <div>
+                <strong>Affiliation</strong>
+                <p>{aboutData.overview.affiliation}</p>
+              </div>
+            </div>
+            <div className={styles.highlightCard}>
+              <Award size={22} className={styles.icon} />
+              <div>
+                <strong>Recognition & Intake</strong>
+                <p>{aboutData.overview.recognition} — {aboutData.overview.intake}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 2: Dean's Desk */}
+        <section id="deans-desk" className={styles.section}>
+          <div className={styles.deanBox}>
+            <div className={styles.deanTopLayout}>
+              <div className={styles.deanPhotoContainer}>
+                {DEAN_PHOTO_PATH ? (
+                  <Image
+                    src={DEAN_PHOTO_PATH}
+                    alt={`${aboutData.deanDesk.deanName} - Dean, PAH GMC Baramati`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 260px"
+                    className={styles.deanPhoto}
+                  />
+                ) : (
+                  <div className={styles.deanPhotoFallback}>
+                    <User size={64} color="var(--color-navy)" />
+                  </div>
+                )}
+              </div>
+
+              <div className={styles.deanHeader}>
+                <span className={styles.subTag}>Leadership</span>
+                <h2 className={styles.sectionTitle}>{aboutData.deanDesk.title}</h2>
+                <h3 className={styles.deanName}>{aboutData.deanDesk.deanName}</h3>
+                <p className={styles.deanQual}>{aboutData.deanDesk.qualification} | Dean, GMC Baramati</p>
+              </div>
+            </div>
+
+            <blockquote className={styles.deanMessage}>
+              &ldquo;{aboutData.deanDesk.message}&rdquo;
+            </blockquote>
+          </div>
+        </section>
+
+        {/* Section 3: RTI Information */}
+        <section id="rti" className={styles.section}>
+          <div className={styles.rtiBox}>
+            <div className={styles.rtiHeader}>
+              <ShieldCheck size={28} className={styles.iconLarge} />
+              <div>
+                <h2 className={styles.sectionTitle}>{aboutData.rti.title}</h2>
+                <p>{aboutData.rti.description}</p>
+              </div>
+            </div>
+
+            <div className={styles.rtiDetails}>
+              <div className={styles.rtiCard}>
+                <strong>Appellate Authority</strong>
+                <p>{aboutData.rti.appellate}</p>
+              </div>
+              <div className={styles.rtiCard}>
+                <strong>Public Information Officer (College)</strong>
+                <p>{aboutData.rti.pioCollege}</p>
+              </div>
+              <div className={styles.rtiCard}>
+                <strong>Public Information Officer (Hospital)</strong>
+                <p>{aboutData.rti.pioHospital}</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </>
+    </main>
   );
-};
+}

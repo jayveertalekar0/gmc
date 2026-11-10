@@ -1,79 +1,224 @@
 .header {
+  width: 100%;
   background-color: var(--color-white);
-  border-bottom: 3px solid var(--color-navy);
-  padding: var(--spacing-md) 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.container {
+.topBar {
+  background-color: var(--color-navy);
+  color: #ffffff;
+  padding: 6px 0;
+  font-size: var(--font-size-xs);
+}
+
+.topBarContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: var(--spacing-md);
 }
 
-.brandGroup {
+.accessibilityBtn {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: 6px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: var(--font-size-xs);
+  cursor: pointer;
 }
 
-.emblemPlaceholder {
-  width: 56px;
-  height: 56px;
-  background-color: var(--color-light-blue);
-  border: 2px solid var(--color-navy);
+.mainHeader {
+  padding: 0.85rem 0;
+  background-color: var(--color-white);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+}
+
+.logoBadge {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-navy);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.85rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 800;
   color: var(--color-navy);
-  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.mobileMenuToggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--color-navy);
+  cursor: pointer;
+}
+
+.nav {
+  background-color: var(--color-navy);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink,
+.navDropdownTrigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.85rem 0.85rem;
+  color: #ffffff;
+  font-weight: 600;
   font-size: var(--font-size-sm);
-  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
-.titles {
-  display: flex;
-  flex-direction: column;
+.navLink:hover,
+.navDropdownTrigger:hover {
+  color: var(--color-focus-ring);
 }
 
-.institutionMarathi {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-secondary);
-  font-weight: 500;
-}
-
-.institutionName {
-  font-size: var(--font-size-lg);
-  font-weight: 700;
-  color: var(--color-navy);
-  line-height: 1.2;
-}
-
-.institutionSub {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-secondary);
-}
-
-.rightBadge {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-}
-
-.nabhText {
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  color: var(--color-blue);
-  background-color: var(--color-light-blue);
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
-@media (max-width: 768px) {
-  .rightBadge {
-    display: none;
+/* Desktop Hover Dropdowns */
+@media (min-width: 1025px) {
+  .navItem:hover .dropdownMenu {
+    display: block;
   }
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-navy);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 230px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.dropdownOpen {
+  display: block !important;
+}
+
+.dropdownLink {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #ffffff;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+}
+
+.dropdownLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-focus-ring);
+}
+
+/* Mobile Rules (<= 1024px) */
+@media (max-width: 1024px) {
+  .mobileMenuToggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .navOpen {
+    display: block;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding-left: 1rem;
+  }
+
+  .navLink,
+  .navDropdownTrigger {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* High Contrast Mode Overrides */
+:global(html.high-contrast) .header {
+  background-color: #000000 !important;
+  border-bottom: 2px solid #ffff00 !important;
+}
+
+:global(html.high-contrast) .nav,
+:global(html.high-contrast) .dropdownMenu {
+  background-color: #000000 !important;
+}
+
+:global(html.high-contrast) .navLink,
+:global(html.high-contrast) .navDropdownTrigger,
+:global(html.high-contrast) .dropdownLink,
+:global(html.high-contrast) .title,
+:global(html.high-contrast) .logoBadge {
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
 }

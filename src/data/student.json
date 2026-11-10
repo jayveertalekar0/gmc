@@ -1,0 +1,37 @@
+{
+  "sections": [
+    {
+      "id": "selection-lists",
+      "title": "Selected Candidate Lists",
+      "description": "Merit and selection lists for Junior Resident (JR), Senior Resident (SR), and Dental Resident posts, alongside MBBS & PG admission proformas.",
+      "links": [
+        { "label": "Selected Junior Resident Candidates", "url": "/notices" },
+        { "label": "Selected Senior Resident Candidates", "url": "/notices" },
+        { "label": "Selected Dental Resident Candidates", "url": "/notices" },
+        { "label": "Admission Proforma & Fee Structure", "url": "/admissions" }
+      ]
+    },
+    {
+      "id": "hostel-library",
+      "title": "Library & Hostel Facilities",
+      "description": "Central library subscription details, reading room hours, and separate hostel accommodation guidelines for undergraduate and postgraduate students.",
+      "links": [
+        { "label": "Central Library Journal Subscriptions", "url": "/notices" },
+        { "label": "Undergraduate Boys & Girls Hostel Guidelines", "url": "/admissions" },
+        { "label": "Hostel Maintenance & Equipment Quotations", "url": "/notices" }
+      ]
+    }
+  ],
+  "committees": [
+    "Anti-Ragging Committee",
+    "Curriculum Committee",
+    "Internal Complaints Committee (ICC)",
+    "Student Grievance Redressal Committee",
+    "Pharmacovigilance Committee",
+    "Institutional Ethics Committee",
+    "Medical Education Unit",
+    "Research Advisory Committee",
+    "Student Manas Scheme Committee",
+    "Student Mental Stress Relief Committee"
+  ]
+}

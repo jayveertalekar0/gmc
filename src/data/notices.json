@@ -1,0 +1,36 @@
+{
+  "notices": [
+    {
+      "id": "1",
+      "title": "Nursing Admission Brochure 2026-27 & MH-B.Sc. Nursing CET Updates",
+      "date": "2026-03-01",
+      "category": "Admissions",
+      "summary": "Official guidelines and admission proforma for the academic year are now available online.",
+      "linkUrl": "/admissions"
+    },
+    {
+      "id": "2",
+      "title": "Central Library & Student Hostel Furniture Procurement Quotations",
+      "date": "2026-02-15",
+      "category": "Tenders",
+      "summary": "Sealed quotations invited for supplying furniture items and repairing hostel hardware fittings.",
+      "linkUrl": "/notices"
+    },
+    {
+      "id": "3",
+      "title": "Advertisements for Senior Resident, Dental Junior Resident & Biomedical Engineers",
+      "date": "2026-02-10",
+      "category": "Recruitment",
+      "summary": "Check eligibility criteria and application formats for ongoing institutional staff selections.",
+      "linkUrl": "/notices"
+    },
+    {
+      "id": "4",
+      "title": "Admission Information Brochure MBBS 2025-26 & PG Admissions Proforma",
+      "date": "2026-01-20",
+      "category": "Admissions",
+      "summary": "Statutory admission proformas and fee structure details approved for the medical cohort.",
+      "linkUrl": "/admissions"
+    }
+  ]
+}

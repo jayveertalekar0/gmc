@@ -1,50 +1,50 @@
-import { NavItem } from '@/types';
+export interface NavItem {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+}
 
-export const PRIMARY_NAV_ITEMS: NavItem[] = [
+export const NAVIGATION_MENU: NavItem[] = [
   { label: 'Home', href: '/' },
-  { 
-    label: 'About Us', 
+  {
+    label: 'About',
     href: '/about',
     children: [
-      { label: 'Overview', href: '/about' },
-      { label: 'Principal Desk', href: '/about/principal' },
-      { label: 'Vision & Mission', href: '/about/vision' },
-      { label: 'Accreditation & Approvals', href: '/about/accreditation' }
-    ]
-  },
-  { 
-    label: 'Administration', 
-    href: '/administration',
-    children: [
-      { label: 'Key Officials', href: '/administration' },
-      { label: 'Committees', href: '/administration/committees' },
-      { label: 'RTI', href: '/rti' }
-    ]
-  },
-  { 
-    label: 'Academics', 
-    href: '/academics',
-    children: [
-      { label: 'MBBS Program', href: '/academics/mbbs' },
-      { label: 'Postgraduate (MD/MS)', href: '/academics/pg' },
-      { label: 'Academic Calendar', href: '/academics/calendar' },
-      { label: 'Examination Notices', href: '/academics/exams' }
-    ]
+      { label: 'About PAH GMC Baramati', href: '/about#overview' },
+      { label: "Dean's Desk", href: '/about#deans-desk' },
+      { label: 'RTI Information (17 BABI)', href: '/about#rti' },
+    ],
   },
   { label: 'Departments', href: '/departments' },
-  { label: 'Faculty', href: '/faculty' },
-  { 
-    label: 'Admissions', 
+  {
+    label: 'Student',
     href: '/admissions',
     children: [
-      { label: 'MBBS Admissions', href: '/admissions/mbbs' },
-      { label: 'Fee Structure', href: '/admissions/fees' },
-      { label: 'Anti-Ragging Cell', href: '/policies/anti-ragging' }
-    ]
+      { label: 'Courses & Admissions', href: '/admissions' },
+      { label: 'Committees & Welfare', href: '/student/committees' },
+      { label: 'Faculty Directory', href: '/faculty' },
+    ],
   },
-  { label: 'Hospital & Services', href: '/hospital' },
-  { label: 'Patients', href: '/patients' },
-  { label: 'Notices', href: '/notices' },
-  { label: 'Mandatory Disclosures', href: '/mandatory-disclosures' },
-  { label: 'Contact', href: '/contact' }
+  {
+    label: 'NMC',
+    href: '/mandatory-disclosures/nmc',
+    children: [
+      { label: 'Government Approval', href: '/mandatory-disclosures/nmc#nmc-approval' },
+      { label: 'Department Wise Faculty', href: '/faculty' },
+      { label: 'Clinical Material Statistics', href: '/mandatory-disclosures/nmc#clinical-material' },
+    ],
+  },
+  {
+    label: 'MUHS',
+    href: '/mandatory-disclosures/muhs',
+    children: [
+      { label: 'MUHS Mandate & Affiliation', href: '/mandatory-disclosures/muhs#muhs-affiliation' },
+      { label: 'Academic & Exam Timetable', href: '/mandatory-disclosures/muhs#muhs-timetable' },
+    ],
+  },
+  { label: 'Quotation', href: '/quotations' },
+  { label: 'Media', href: '/media' },
+  { label: 'Contact', href: '/contact' },
 ];
+
+export const PRIMARY_NAV_ITEMS = NAVIGATION_MENU;

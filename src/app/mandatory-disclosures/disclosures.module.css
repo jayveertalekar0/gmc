@@ -1,0 +1,180 @@
+.main {
+  padding-bottom: 5rem;
+}
+
+.section {
+  margin-top: 3.5rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.sectionLead {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.disclosureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.disclosureCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.disclosureCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  background-color: rgba(0, 86, 179, 0.1);
+  color: var(--color-blue);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.cardIcon {
+  color: var(--color-blue);
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+}
+
+.viewLink {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.rtiBox {
+  background: var(--color-bg-light, #f8f9fa);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.rtiHeader {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rtiIcon {
+  color: var(--color-blue);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.rtiHeader h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.25rem;
+}
+
+.rtiHeader p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+.officerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.officerCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.officerIcon {
+  color: var(--color-blue);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.officerRole {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+.officerDesignation {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.4rem;
+}
+
+.officerContact {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+/* High Contrast Mode Overrides */
+:global(html.high-contrast) .disclosureCard,
+:global(html.high-contrast) .rtiBox,
+:global(html.high-contrast) .officerCard {
+  background-color: #000000 !important;
+  border: 1px solid #ffff00 !important;
+  color: #ffffff !important;
+}
+
+:global(html.high-contrast) .badge {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+}

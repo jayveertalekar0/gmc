@@ -1,0 +1,46 @@
+{
+  "undergraduate": [
+    {
+      "id": "mbbs",
+      "program": "MBBS (Bachelor of Medicine and Bachelor of Surgery)",
+      "duration": "5.5 Years (Including 1 Year Internship)",
+      "intake": 100,
+      "affiliation": "MUHS Nashik & NMC Recognized",
+      "eligibility": "NEET-UG qualified, 10+2 with Physics, Chemistry, Biology, and English with required percentile.",
+      "admissionProcess": "Centralized admission process conducted by State CET Cell, Government of Maharashtra.",
+      "documents": [
+        "NEET-UG Admit Card & Score Card",
+        "Nationality Certificate / Valid Passport",
+        "Domicile Certificate",
+        "SSC (10th) & HSC (12th) Marksheet & Passing Certificates",
+        "Medical Fitness Certificate (Proforma)"
+      ]
+    },
+    {
+      "id": "nursing",
+      "program": "B.Sc. Nursing",
+      "duration": "4 Years",
+      "intake": 60,
+      "affiliation": "MUHS Nashik & Indian Nursing Council",
+      "eligibility": "MH-B.Sc. Nursing-CET qualified with minimum 45% aggregate in PCB in 12th standard.",
+      "admissionProcess": "Cap rounds managed by State Common Entrance Test Cell, Maharashtra State.",
+      "documents": [
+        "MH-B.Sc. Nursing CET Score Card",
+        "HSC (12th) Marksheet",
+        "Transfer / Leaving Certificate",
+        "Caste & Validity Certificate (if applicable)"
+      ]
+    }
+  ],
+  "postgraduate": [
+    {
+      "id": "md-ms",
+      "program": "MD / MS Specializations",
+      "duration": "3 Years",
+      "intake": "Varies by Subject (Physiology, Community Medicine, Anaesthesia)",
+      "affiliation": "MUHS Nashik & NMC Approved",
+      "eligibility": "NEET-PG qualified, recognized MBBS degree from an accredited institution.",
+      "admissionProcess": "State quota & All India Quota counseling rounds via NEET-PG merit ranking."
+    }
+  ]
+}

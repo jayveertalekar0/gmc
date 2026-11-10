@@ -1,0 +1,92 @@
+.main {
+  padding-bottom: 5rem;
+}
+
+.categorySection {
+  margin-top: 3.5rem;
+}
+
+.categoryTitle {
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.categoryIcon {
+  color: var(--color-blue);
+}
+
+.deptGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.deptCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.deptCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.deptHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+
+.deptIcon {
+  color: var(--color-blue);
+}
+
+.deptBadge {
+  background-color: rgba(0, 86, 179, 0.1);
+  color: var(--color-blue);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.deptName {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.deptDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* High Contrast Mode */
+:global(html.high-contrast) .deptCard {
+  background-color: #000000 !important;
+  border: 1px solid #ffff00 !important;
+  color: #ffffff !important;
+}
+
+:global(html.high-contrast) .deptBadge {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+}

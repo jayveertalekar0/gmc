@@ -1,0 +1,131 @@
+/* src/app/admissions/admissions.module.css */
+.main {
+  padding-bottom: 5rem;
+}
+
+.downloadsBar {
+  margin-top: 3rem;
+  background: var(--color-navy, #002147);
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.downloadsBar h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.downloadBtn {
+  background-color: #ffffff;
+  color: var(--color-navy, #002147);
+  padding: 0.5rem 0.85rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.downloadBtn:hover {
+  background-color: var(--color-bg-light, #f8f9fa);
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.courseCard {
+  background: #ffffff;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 8px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  color: var(--color-blue, #0056b3);
+}
+
+.badge {
+  background-color: rgba(0, 86, 179, 0.1);
+  color: var(--color-blue, #0056b3);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.courseCard h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-navy, #002147);
+  margin-bottom: 0.75rem;
+}
+
+.metaRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  color: var(--color-text-secondary, #555555);
+  margin-bottom: 1rem;
+  background: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary, #555555);
+  line-height: 1.5;
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+}
+
+.affilTag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-blue, #0056b3);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-top: 1px solid var(--color-border, #e2e8f0);
+  padding-top: 0.75rem;
+}
+
+:global(html.high-contrast) .courseCard,
+:global(html.high-contrast) .downloadsBar {
+  background-color: #000000 !important;
+  border: 1px solid #ffff00 !important;
+  color: #ffffff !important;
+}

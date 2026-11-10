@@ -1,0 +1,24 @@
+{
+  "title": "MUHS Mandate & Affiliation",
+  "subtitle": "Affiliation details with Maharashtra University of Health Sciences (MUHS), Nashik, academic calendars, and examination schedules.",
+  "sections": [
+    {
+      "id": "muhs-affiliation",
+      "title": "MUHS Continuation of Affiliation",
+      "items": [
+        "Annual MUHS continuation of affiliation certificates for undergraduate MBBS program.",
+        "Academic council approval and intake capacity clearance.",
+        "MUHS circulars and academic guidelines."
+      ]
+    },
+    {
+      "id": "muhs-timetable",
+      "title": "Academic Calendar & Examination Schedules",
+      "items": [
+        "Phase-wise internal assessment and term-end examination timetables.",
+        "MUHS winter and summer university examination center notices.",
+        "Attendance guidelines and eligibility criteria for university exams."
+      ]
+    }
+  ]
+}

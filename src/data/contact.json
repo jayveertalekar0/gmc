@@ -1,0 +1,26 @@
+{
+  "general": {
+    "institutionName": "Punyashlok Ahilyadevi Holkar Government Medical College & General Hospital",
+    "address": "Plot No. P-107, MIDC Area, Baramati, Pune - 413133, Maharashtra, India",
+    "phone": ["+91 2112 244172", "+91 2112 244170"],
+    "email": "deangmcbaramati@gmail.com",
+    "workingHours": "Monday to Friday: 9:00 AM - 5:00 PM | Emergency: 24/7"
+  },
+  "departments": [
+    {
+      "title": "Dean's Office / Administration",
+      "phone": "+91 2112 244172",
+      "email": "deangmcbaramati@gmail.com"
+    },
+    {
+      "title": "Hospital Emergency & Casualty",
+      "phone": "+91 2112 244170",
+      "email": "casualty.gmcbaramati@gmail.com"
+    },
+    {
+      "title": "Student Section & Academic Inquiries",
+      "phone": "+91 2112 244172",
+      "email": "studentsection.gmcbaramati@gmail.com"
+    }
+  ]
+}

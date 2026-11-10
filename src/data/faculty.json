@@ -1,0 +1,100 @@
+{
+  "leadership": [
+    {
+      "name": "Dr. Chandrakant B. Mhaske",
+      "designation": "Dean",
+      "qualification": "MBBS, MD (Skin & VD)",
+      "department": "Administration / Dermatology",
+      "email": "deangmcbaramati@gmail.com"
+    },
+    {
+      "name": "Medical Superintendent",
+      "designation": "Medical Superintendent",
+      "qualification": "MBBS, MS",
+      "department": "General Hospital Administration",
+      "email": "ms.gmcbaramati@maharashtra.gov.in"
+    }
+  ],
+  "departments": [
+    {
+      "department": "Anatomy",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MS (Anatomy)" },
+        { "name": "Dr. Associate Professor", "designation": "Associate Professor", "qualification": "MBBS, MS (Anatomy)" },
+        { "name": "Dr. Assistant Professor", "designation": "Assistant Professor", "qualification": "MBBS, MD" }
+      ]
+    },
+    {
+      "department": "Physiology",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MD (Physiology)" },
+        { "name": "Dr. Associate Professor", "designation": "Associate Professor", "qualification": "MBBS, MD" }
+      ]
+    },
+    {
+      "department": "Biochemistry",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MD (Biochemistry)" },
+        { "name": "Dr. Assistant Professor", "designation": "Assistant Professor", "qualification": "MBBS, MD" }
+      ]
+    },
+    {
+      "department": "Pathology",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MD (Pathology)" },
+        { "name": "Dr. Associate Professor", "designation": "Associate Professor", "qualification": "MBBS, MD" },
+        { "name": "Dr. Assistant Professor", "designation": "Assistant Professor", "qualification": "MBBS, MD" }
+      ]
+    },
+    {
+      "department": "Microbiology",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MD (Microbiology)" },
+        { "name": "Dr. Assistant Professor", "designation": "Assistant Professor", "qualification": "MBBS, MD" }
+      ]
+    },
+    {
+      "department": "Pharmacology",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MD (Pharmacology)" },
+        { "name": "Dr. Associate Professor", "designation": "Associate Professor", "qualification": "MBBS, MD" }
+      ]
+    },
+    {
+      "department": "Community Medicine",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MD (PSM)" },
+        { "name": "Dr. Associate Professor", "designation": "Associate Professor", "qualification": "MBBS, MD" }
+      ]
+    },
+    {
+      "department": "General Medicine",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MD (Medicine)" },
+        { "name": "Dr. Associate Professor", "designation": "Associate Professor", "qualification": "MBBS, MD" },
+        { "name": "Dr. Assistant Professor", "designation": "Assistant Professor", "qualification": "MBBS, MD" }
+      ]
+    },
+    {
+      "department": "General Surgery",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MS (Surgery)" },
+        { "name": "Dr. Associate Professor", "designation": "Associate Professor", "qualification": "MBBS, MS" }
+      ]
+    },
+    {
+      "department": "Obstetrics & Gynecology",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MS (OBGY)" },
+        { "name": "Dr. Associate Professor", "designation": "Associate Professor", "qualification": "MBBS, MD/MS" }
+      ]
+    },
+    {
+      "department": "Pediatrics",
+      "faculty": [
+        { "name": "Dr. Department Head", "designation": "Professor & HOD", "qualification": "MBBS, MD (Pediatrics)" },
+        { "name": "Dr. Assistant Professor", "designation": "Assistant Professor", "qualification": "MBBS, MD" }
+      ]
+    }
+  ]
+}

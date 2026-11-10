@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Q-2026-08",
+    "title": "Quotation for Supply of Central Laboratory Diagnostic Reagents & Kits",
+    "date": "2026-10-15",
+    "lastDate": "2026-11-20",
+    "category": "Hospital Equipment",
+    "status": "Active"
+  },
+  {
+    "id": "Q-2026-07",
+    "title": "Procurement Notice for Medical Books and Online Journal Subscriptions for Central Library",
+    "date": "2026-09-28",
+    "lastDate": "2026-11-15",
+    "category": "Library Supplies",
+    "status": "Active"
+  },
+  {
+    "id": "Q-2026-06",
+    "title": "Tender Notice for Annual Maintenance Contract (AMC) of ICU Ventilators & Defibrillators",
+    "date": "2026-08-10",
+    "lastDate": "2026-09-10",
+    "category": "Maintenance",
+    "status": "Archived"
+  }
+]

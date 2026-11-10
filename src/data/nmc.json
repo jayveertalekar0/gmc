@@ -1,0 +1,33 @@
+{
+  "title": "National Medical Commission (NMC) Disclosures",
+  "subtitle": "Mandatory statutory disclosures, government approvals, and department-wise faculty details in accordance with NMC norms.",
+  "sections": [
+    {
+      "id": "nmc-approval",
+      "title": "Government Approvals & NMC Recognition",
+      "details": [
+        "Government of Maharashtra Letter of Intent (LOI) and Establishment Notification.",
+        "National Medical Commission (NMC) permission for 100 undergraduate (MBBS) seats annually.",
+        "Compliance status reports for annual renewal of permission."
+      ]
+    },
+    {
+      "id": "faculty-list",
+      "title": "Department-Wise Faculty & Staffing",
+      "details": [
+        "Comprehensive faculty roster for Pre-Clinical, Para-Clinical, and Clinical departments.",
+        "Teaching staff qualification verification and NMC faculty ID mappings.",
+        "Biometric attendance records and teaching faculty distribution."
+      ]
+    },
+    {
+      "id": "clinical-material",
+      "title": "Hospital Clinical Material & Infrastructure",
+      "details": [
+        "Daily OPD/IPD turnout census and bed occupancy rates.",
+        "Major and minor surgical operation statistics.",
+        "Radiological and central laboratory investigation volumes."
+      ]
+    }
+  ]
+}

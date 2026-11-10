@@ -1,0 +1,65 @@
+[
+  {
+    "id": "cm",
+    "name": "Shri. Devendra Fadnavis",
+    "title": "Hon’ble Chief Minister",
+    "organization": "Maharashtra State",
+    "image": "/images/leadership/devendra-fadnavis.jpg"
+  },
+  {
+    "id": "deputy-cm-1",
+    "name": "Smt. Sunetra Ajit Pawar",
+    "title": "Hon’ble Deputy Chief Minister",
+    "organization": "Maharashtra State",
+    "image": "/images/leadership/sunetra-pawar.jpg"
+  },
+  {
+    "id": "deputy-cm-2",
+    "name": "Shri. Eknath Shinde",
+    "title": "Hon’ble Deputy Chief Minister",
+    "organization": "Maharashtra State",
+    "image": "/images/leadership/eknath-shinde.jpg"
+  },
+  {
+    "id": "cabinet-minister",
+    "name": "Shri. Hasan Mushrif",
+    "title": "Hon’ble Minister",
+    "organization": "Medical Education, Maharashtra State",
+    "image": "/images/leadership/hasan-mushrif.jpg"
+  },
+  {
+    "id": "state-minister",
+    "name": "Smt. Madhuri Misal",
+    "title": "Hon’ble Minister of State",
+    "organization": "Medical Education, Maharashtra State",
+    "image": "/images/leadership/madhuri-misal.jpg"
+  },
+  {
+    "id": "secretary",
+    "name": "Shri. Dhiraj Kumar",
+    "title": "Secretary",
+    "organization": "Medical Education and Drugs",
+    "image": "/images/leadership/dhiraj-kumar.jpg"
+  },
+  {
+    "id": "commissioner",
+    "name": "Shri. Anil Bhandari",
+    "title": "Hon’ble Commissioner",
+    "organization": "Medical Education and Ayush",
+    "image": "/images/leadership/anil-bhandari.jpg"
+  },
+  {
+    "id": "dmer-director",
+    "name": "Director",
+    "title": "Director",
+    "organization": "Medical Education and Research (DMER)",
+    "image": "/images/leadership/dmer-director.jpg"
+  },
+  {
+    "id": "dean",
+    "name": "Dr. Chandrakant B. Mhaske",
+    "title": "Dean (MBBS, MD-Skin)",
+    "organization": "PAH Government Medical College, Baramati",
+    "image": "/images/leadership/dean-mhaske.jpg"
+  }
+]

@@ -1,29 +1,40 @@
 import React from 'react';
-import { PageBanner } from '@/components/common/PageBanner';
-import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { getNotices } from '@/lib/dataService';
-import { NoticeListClient } from './NoticeListClient';
+import Link from 'next/link';
+import noticesData from '@/data/notices.json';
+import styles from './notices.module.css';
 
 export const metadata = {
-  title: 'Official Notices & Circulars | GMC Baramati',
-  description: 'View and download recent academic timetables, admission updates, recruitment circulars, and hospital notices from GMC Baramati.',
+  title: 'Notices, Tenders & Circulars | GMC Baramati',
+  description: 'Official circulars, quotation tenders, and admission notices for PAH GMC Baramati.',
 };
 
-export default async function NoticesPage() {
-  // Fetch initial dataset via Data Access Layer
-  const notices = await getNotices();
-
+export default function NoticesPage() {
   return (
-    <>
-      <PageBanner 
-        title="Official Notices & Circulars" 
-        subtitle="Archive of institutional announcements, exam schedules, recruitment notices, and general circulars" 
-      />
-      <Breadcrumb items={[{ label: 'Notices', href: '/notices' }]} />
+    <main className={styles.main}>
+      <div className="container">
+        <header className={styles.pageHeader}>
+          <h1 className={styles.title}>Notices, Tenders & Circulars</h1>
+          <p className={styles.subtitle}>
+            Official announcements, procurement quotations, and recruitment notifications published by GMC Baramati.
+          </p>
+        </header>
 
-      <div className="container" style={{ padding: '3rem 1rem' }}>
-        <NoticeListClient initialNotices={notices} />
+        <div className={styles.listContainer}>
+          {noticesData.notices.map((notice) => (
+            <article key={notice.id} className={styles.noticeCard}>
+              <div className={styles.metaRow}>
+                <span className={styles.categoryBadge}>{notice.category}</span>
+                <span className={styles.date}>{notice.date}</span>
+              </div>
+              <h2 className={styles.noticeTitle}>{notice.title}</h2>
+              <p className={styles.noticeSummary}>{notice.summary}</p>
+              <Link href={notice.linkUrl} className={styles.detailsBtn}>
+                View Document / Details &rarr;
+              </Link>
+            </article>
+          ))}
+        </div>
       </div>
-    </>
+    </main>
   );
 }

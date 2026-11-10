@@ -1,0 +1,43 @@
+{
+  "emergency": {
+    "title": "24/7 Casualty & Trauma Care",
+    "description": "Round-the-clock emergency medical services, critical life support, triage, and trauma resuscitation units equipped to handle acute medical and surgical emergencies."
+  },
+  "departments": [
+    {
+      "id": "general-medicine",
+      "name": "General Medicine",
+      "description": "Comprehensive outpatient (OPD) and inpatient (IPD) care for acute illnesses, chronic disease management, infectious disease control, and preventive health screenings."
+    },
+    {
+      "id": "general-surgery",
+      "name": "General & Laparoscopic Surgery",
+      "description": "Routine and complex surgical procedures including emergency exploratory surgeries, hernia repairs, appendectomies, and minimally invasive laparoscopic interventions."
+    },
+    {
+      "id": "pediatrics",
+      "name": "Pediatrics & Neonatology",
+      "description": "Specialized healthcare for infants, children, and adolescents, featuring newborn care units, immunization clinics, and childhood developmental monitoring."
+    },
+    {
+      "id": "obgyn",
+      "name": "Obstetrics & Gynecology (OB-GYN)",
+      "description": "Comprehensive maternal health services, Antenatal Care (ANC) clinics, safe institutional deliveries, postnatal care, and family welfare programs."
+    },
+    {
+      "id": "orthopedics",
+      "name": "Orthopedics & Trauma",
+      "description": "Diagnosis and surgical/nonsurgical management of musculoskeletal disorders, fracture fixations, joint care, and physical rehabilitation."
+    },
+    {
+      "id": "blood-centre",
+      "name": "Blood Centre & Storage Unit",
+      "description": "Licensed 24/7 blood storage and component separation facility ensuring safe blood transfusion services for surgical and emergency patients."
+    },
+    {
+      "id": "radiology",
+      "name": "Radiology & Diagnostics",
+      "description": "Advanced digital X-Ray imaging, ultrasound (USG), and laboratory pathology services supporting precise clinical diagnosis."
+    }
+  ]
+}

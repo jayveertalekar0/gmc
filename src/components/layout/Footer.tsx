@@ -11,11 +11,12 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className={styles.colTitle}>GMC Baramati</h3>
             <p className={styles.text}>
-              Government Medical College & General Hospital, Baramati is a premier state-run medical institution under the Directorate of Medical Education and Research (DMER), Government of Maharashtra.
+              Punyashlok Ahilyadevi Holkar Government Medical College & General Hospital, Baramati is a premier state-run medical institution under the Directorate of Medical Education and Research (DMER), Government of Maharashtra.
             </p>
             <p className={styles.text} style={{ marginTop: '12px' }}>
-              <strong>Emergency Helpline:</strong> 02112-295000<br />
-              <strong>Email:</strong> dean.gmcbaramati@gmail.com
+              <strong>Address:</strong> Plot No. P-107, MIDC Area, Baramati, Pune - 413133<br />
+              <strong>Phone:</strong> +91 2112 244172 / 244170<br />
+              <strong>Email:</strong> deangmcbaramati@gmail.com
             </p>
           </div>
 
@@ -48,7 +49,7 @@ export const Footer: React.FC = () => {
       {/* Bottom Bar */}
       <div className={styles.bottomBar}>
         <div className={`container ${styles.bottomContainer}`}>
-          <p>© 2026 Government Medical College & General Hospital, Baramati. All Rights Reserved.</p>
+          <p>© 2026 Punyashlok Ahilyadevi Holkar Government Medical College & Hospital, Baramati. All Rights Reserved.</p>
           <p>Designed for GIGW 3.0 & WCAG 2.1 Level AA Compliance</p>
         </div>
       </div>

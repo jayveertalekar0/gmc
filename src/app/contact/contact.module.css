@@ -1,0 +1,141 @@
+.main {
+  padding-bottom: 5rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 850px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.infoCard,
+.extensionBox {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.cardHeading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.infoRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.infoIcon {
+  color: var(--color-blue);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.infoRow strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+.infoRow p {
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+.extList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.extCard {
+  background: var(--color-bg-light, #f8f9fa);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.extCard h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.4rem;
+}
+
+.extCard p {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.2rem;
+}
+
+.section {
+  margin-top: 4rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.transitGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.transitCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.transitIcon {
+  color: var(--color-blue);
+  margin-bottom: 0.75rem;
+}
+
+.transitCard h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.transitCard p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* High Contrast Mode Overrides */
+:global(html.high-contrast) .infoCard,
+:global(html.high-contrast) .extensionBox,
+:global(html.high-contrast) .extCard,
+:global(html.high-contrast) .transitCard {
+  background-color: #000000 !important;
+  border: 1px solid #ffff00 !important;
+  color: #ffffff !important;
+}

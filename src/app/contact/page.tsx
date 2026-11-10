@@ -1,75 +1,93 @@
 import React from 'react';
 import { PageBanner } from '@/components/common/PageBanner';
-import { Breadcrumb } from '@/components/common/Breadcrumb';
 import { MapPin, Phone, Mail, Clock, Building2 } from 'lucide-react';
+import contactData from '@/data/contact.json';
+import styles from './contact.module.css';
 
 export const metadata = {
-  title: 'Contact Us | Government Medical College & General Hospital, Baramati',
-  description: 'Address, phone directory, emergency helpline, and campus map for GMC Baramati.',
+  title: 'Contact Us & Directions | GMC Baramati',
+  description: 'Official address, phone contacts, email directories, and transit directions for Punyashlok Ahilyadevi Holkar Government Medical College & Hospital, Baramati.',
 };
 
 export default function ContactPage() {
   return (
-    <>
-      <PageBanner 
-        title="Contact Us" 
-        subtitle="Get in touch with administrative offices, hospital casualty, or academic departments" 
+    <main className={styles.main}>
+      <PageBanner
+        title="Contact Us & Location"
+        subtitle="Get in touch with the administration, hospital enquiry desks, or visit our campus in Baramati."
       />
-      <Breadcrumb items={[{ label: 'Contact Us', href: '/contact' }]} />
 
-      <div className="container" style={{ padding: '3rem 1rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
-          
-          {/* Main Postal Address */}
-          <div style={{ backgroundColor: 'var(--color-white)', border: '1px solid var(--color-border)', borderRadius: '8px', padding: '1.5rem' }}>
-            <h3 style={{ fontSize: '1.15rem', color: 'var(--color-navy)', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1rem', borderBottom: '2px solid var(--color-blue)', paddingBottom: '6px' }}>
-              <Building2 size={20} color="var(--color-blue)" /> Campus Address
-            </h3>
-            <p style={{ fontSize: '0.875rem', color: 'var(--color-text-main)', lineHeight: '1.7' }}>
-              <strong>Government Medical College & General Hospital</strong><br />
-              Plot No. R-1, MIDC Area, Opp. Women’s Hospital,<br />
-              Baramati, District Pune,<br />
-              Maharashtra – 413102, India
-            </p>
+      <div className="container">
+        <div className={styles.contactGrid}>
+          {/* Official Address & Info Card */}
+          <div className={styles.infoCard}>
+            <h2 className={styles.cardHeading}>Campus Location</h2>
+            
+            <div className={styles.infoRow}>
+              <MapPin size={22} className={styles.infoIcon} />
+              <div>
+                <strong>Address:</strong>
+                <p>{contactData.general.address}</p>
+              </div>
+            </div>
+
+            <div className={styles.infoRow}>
+              <Phone size={22} className={styles.infoIcon} />
+              <div>
+                <strong>Telephone / Helpline:</strong>
+                <p>{contactData.general.phone.join(' / ')}</p>
+              </div>
+            </div>
+
+            <div className={styles.infoRow}>
+              <Mail size={22} className={styles.infoIcon} />
+              <div>
+                <strong>Official Email:</strong>
+                <p>{contactData.general.email}</p>
+              </div>
+            </div>
+
+            <div className={styles.infoRow}>
+              <Clock size={22} className={styles.infoIcon} />
+              <div>
+                <strong>Office Hours:</strong>
+                <p>{contactData.general.workingHours}</p>
+              </div>
+            </div>
           </div>
 
-          {/* Key Helplines & Emails */}
-          <div style={{ backgroundColor: 'var(--color-white)', border: '1px solid var(--color-border)', borderRadius: '8px', padding: '1.5rem' }}>
-            <h3 style={{ fontSize: '1.15rem', color: 'var(--color-navy)', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1rem', borderBottom: '2px solid var(--color-blue)', paddingBottom: '6px' }}>
-              <Phone size={20} color="var(--color-blue)" /> Key Phone Numbers
-            </h3>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.875rem', color: 'var(--color-text-main)' }}>
-              <li><strong>24x7 Emergency Casualty:</strong> 02112-295000</li>
-              <li><strong>Dean Office:</strong> 02112-295001</li>
-              <li><strong>Student Academic Section:</strong> 02112-295002</li>
-              <li><strong>Hospital Reception Desk:</strong> 02112-295003</li>
-            </ul>
+          {/* Key Section Extension Contacts */}
+          <div className={styles.extensionBox}>
+            <h2 className={styles.cardHeading}>Departmental Contacts</h2>
+            <div className={styles.extList}>
+              {contactData.departments.map((dept, index) => (
+                <div key={index} className={styles.extCard}>
+                  <h3>{dept.title}</h3>
+                  <p><strong>Phone:</strong> {dept.phone}</p>
+                  <p><strong>Email:</strong> {dept.email}</p>
+                </div>
+              ))}
+            </div>
           </div>
-
-          {/* Email Contacts */}
-          <div style={{ backgroundColor: 'var(--color-white)', border: '1px solid var(--color-border)', borderRadius: '8px', padding: '1.5rem' }}>
-            <h3 style={{ fontSize: '1.15rem', color: 'var(--color-navy)', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1rem', borderBottom: '2px solid var(--color-blue)', paddingBottom: '6px' }}>
-              <Mail size={20} color="var(--color-blue)" /> Official Emails
-            </h3>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.875rem', color: 'var(--color-text-main)' }}>
-              <li><strong>Principal & Dean:</strong> dean.gmcbaramati@gmail.com</li>
-              <li><strong>Academic Inquiries:</strong> academics.gmcbaramati@gmail.com</li>
-              <li><strong>RTI Cell:</strong> rti.gmcbaramati@gmail.com</li>
-            </ul>
-          </div>
-
         </div>
 
-        {/* Map Section Placeholder */}
-        <div style={{ backgroundColor: 'var(--color-white)', border: '1px solid var(--color-border)', borderRadius: '8px', padding: '1.5rem' }}>
-          <h3 style={{ fontSize: '1.25rem', color: 'var(--color-navy)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <MapPin size={20} color="var(--color-blue)" /> Location & Map
-          </h3>
-          <div style={{ width: '100%', height: '300px', backgroundColor: 'var(--color-light-blue)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-navy)', fontWeight: 600 }}>
-            Google Maps Embed Container (MIDC Area, Baramati, Maharashtra)
+        {/* Transit & How to Reach */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>How to Reach Campus</h2>
+          <div className={styles.transitGrid}>
+            <div className={styles.transitCard}>
+              <Building2 size={24} className={styles.transitIcon} />
+              <h3>By Road</h3>
+              <p>Located in the MIDC Area of Baramati. Regularly connected via MSRTC bus corridors from Pune (100 km), Daund, and Solapur.</p>
+            </div>
+            <div className={styles.transitCard}>
+              <Building2 size={24} className={styles.transitIcon} />
+              <h3>By Rail</h3>
+              <p>Nearest major railway junction is <strong>Daund Junction (DD)</strong> (approx. 40 km) and <strong>Baramati Railway Station (BRMT)</strong> (approx. 6 km).</p>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
-    </>
+    </main>
   );
 }

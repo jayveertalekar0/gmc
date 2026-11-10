@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mbbs",
+    "title": "MBBS (Bachelor of Medicine and Bachelor of Surgery)",
+    "level": "Undergraduate",
+    "duration": "4.5 Years + 1 Year Mandatory Rotatory Internship",
+    "intake": "100 Seats",
+    "affiliation": "MUHS Nashik & Recognized by NMC",
+    "description": "Comprehensive medical training focusing on basic medical sciences, paraclinical diagnostics, clinical exposure, and rural community health postings."
+  },
+  {
+    "id": "md-ms",
+    "title": "MD / MS Postgraduate Courses",
+    "level": "Postgraduate",
+    "duration": "3 Years",
+    "intake": "Specialty Specific (Physiology, Community Medicine, Anaesthesia)",
+    "affiliation": "MUHS Nashik",
+    "description": "Specialized post-graduate clinical and pre-clinical residency training programs."
+  },
+  {
+    "id": "ccmp",
+    "title": "CCMP (Certificate Course in Modern Pharmacology)",
+    "level": "Certificate Course",
+    "duration": "1 Year",
+    "intake": "As per DMER / State Guidelines",
+    "affiliation": "Government of Maharashtra",
+    "description": "Formal pharmacology certification for registered homoeopathic and alternative medicine practitioners in Maharashtra."
+  },
+  {
+    "id": "bsc-nursing",
+    "title": "B.Sc. Nursing",
+    "level": "Undergraduate Nursing",
+    "duration": "4 Years",
+    "intake": "State CET Cell Allotment",
+    "affiliation": "MUHS Nashik & Government College of Nursing, Baramati",
+    "description": "Professional nursing education integrated with live inpatient hospital exposure and clinical rotations."
+  }
+]

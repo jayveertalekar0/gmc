@@ -1,74 +1,44 @@
 import React from 'react';
 import { PageBanner } from '@/components/common/PageBanner';
-import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { getDepartments } from '@/lib/dataService';
-import { Department } from '@/types';
+import { Building2, Stethoscope, ChevronRight } from 'lucide-react';
+import deptData from '@/data/departments.json';
+import styles from './departments.module.css';
 
 export const metadata = {
-  title: 'Departments | Government Medical College & General Hospital, Baramati',
-  description: 'Explore Pre-Clinical, Para-Clinical, and Clinical departments at GMC Baramati.',
+  title: 'Departments & Hospital Services | GMC Baramati',
+  description: 'Explore pre-clinical, para-clinical, and clinical medical departments at Punyashlok Ahilyadevi Holkar Government Medical College & Hospital, Baramati.',
 };
 
-export default async function DepartmentsPage() {
-  // Fetch dataset via Data Access Layer
-  const departments: Department[] = await getDepartments();
+export default function DepartmentsPage() {
+  return (
+    <main className={styles.main}>
+      <PageBanner
+        title="Institutional Departments"
+        subtitle="Comprehensive pre-clinical, para-clinical, and clinical specialty departments delivering medical education and 24/7 patient care."
+      />
 
-  const preClinical = departments.filter((d) => d.type === 'pre-clinical');
-  const paraClinical = departments.filter((d) => d.type === 'para-clinical');
-  const clinical = departments.filter((d) => d.type === 'clinical');
-
-  const renderSection = (title: string, items: Department[]) => (
-    <div style={{ marginBottom: '2.5rem' }}>
-      <h3 style={{ 
-        fontSize: '1.25rem', 
-        color: 'var(--color-navy)', 
-        borderBottom: '2px solid var(--color-blue)', 
-        paddingBottom: '6px', 
-        marginBottom: '1rem' 
-      }}>
-        {title} ({items.length})
-      </h3>
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-        gap: '1rem' 
-      }}>
-        {items.map((dept) => (
-          <div key={dept.id} style={{ 
-            backgroundColor: 'var(--color-white)', 
-            border: '1px solid var(--color-border)', 
-            borderRadius: '6px', 
-            padding: '1.25rem',
-            boxShadow: '0 2px 6px rgba(9,45,85,0.03)'
-          }}>
-            <h4 style={{ fontSize: '1.1rem', color: 'var(--color-navy)', marginBottom: '4px' }}>
-              {dept.name}
-            </h4>
-            <span style={{ fontSize: '0.75rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>
-              HOD: {dept.headOfDepartment}
-            </span>
-            <p style={{ fontSize: '0.875rem', color: 'var(--color-text-main)', marginTop: '8px', lineHeight: '1.5' }}>
-              {dept.description}
-            </p>
-          </div>
+      <div className="container">
+        {deptData.categories.map((cat, idx) => (
+          <section key={idx} className={styles.categorySection}>
+            <h2 className={styles.categoryTitle}>
+              <Building2 size={24} className={styles.categoryIcon} />
+              {cat.title}
+            </h2>
+            <div className={styles.deptGrid}>
+              {cat.departments.map((dept, dIdx) => (
+                <div key={dIdx} className={styles.deptCard}>
+                  <div className={styles.deptHeader}>
+                    <Stethoscope size={20} className={styles.deptIcon} />
+                    <span className={styles.deptBadge}>{dept.head}</span>
+                  </div>
+                  <h3 className={styles.deptName}>{dept.name}</h3>
+                  <p className={styles.deptDesc}>{dept.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
-    </div>
-  );
-
-  return (
-    <>
-      <PageBanner 
-        title="Academic & Clinical Departments" 
-        subtitle="Specialized medical departments across pre-clinical, para-clinical, and clinical wings" 
-      />
-      <Breadcrumb items={[{ label: 'Departments', href: '/departments' }]} />
-
-      <div className="container" style={{ padding: '3rem 1rem' }}>
-        {renderSection('Pre-Clinical Departments', preClinical)}
-        {renderSection('Para-Clinical Departments', paraClinical)}
-        {renderSection('Clinical Departments & Hospital Wings', clinical)}
-      </div>
-    </>
+    </main>
   );
 }

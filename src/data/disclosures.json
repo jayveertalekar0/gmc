@@ -1,0 +1,49 @@
+{
+  "statutory": [
+    {
+      "id": "nmc-approval",
+      "title": "NMC / MCI Recognition & Government Approval",
+      "category": "Regulatory",
+      "description": "Official letter of permission and annual renewal notifications issued by the National Medical Commission for 100 MBBS seats."
+    },
+    {
+      "id": "muhs-affiliation",
+      "title": "MUHS Nashik Continuation of Affiliation",
+      "category": "Academic",
+      "description": "Annual affiliation continuation certificates issued by Maharashtra University of Health Sciences (MUHS), Nashik."
+    },
+    {
+      "id": "faculty-timetable",
+      "title": "Department-wise Faculty List & Teaching Time Tables",
+      "category": "Academic",
+      "description": "Comprehensive cadre-wise list of Professors, Associate Professors, Assistant Professors, and Senior Residents per medical department."
+    },
+    {
+      "id": "clinical-material",
+      "title": "Monthly Clinical Material & Hospital Statistics",
+      "category": "Hospital",
+      "description": "Monthly bed occupancy rate, OPD/IPD attendance, surgical volume, and central laboratory diagnostic metrics."
+    }
+  ],
+  "rti": {
+    "title": "Right to Information (RTI) Act 2005",
+    "description": "Information published under Section 4(1)(b) of the RTI Act 2005 for public disclosure.",
+    "officers": [
+      {
+        "role": "Appellate Authority",
+        "designation": "Dean, PAH GMC Baramati",
+        "contact": "deangmcbaramati@gmail.com | +91 2112 244172"
+      },
+      {
+        "role": "Public Information Officer (PIO - College)",
+        "designation": "Administrative Officer",
+        "contact": "deangmcbaramati@gmail.com | +91 2112 244172"
+      },
+      {
+        "role": "Public Information Officer (PIO - Hospital)",
+        "designation": "Medical Superintendent",
+        "contact": "casualty.gmcbaramati@gmail.com | +91 2112 244170"
+      }
+    ]
+  }
+}

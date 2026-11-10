@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "title": "Pre-Clinical Departments",
+      "departments": [
+        { "name": "Anatomy", "head": "Professor & HOD", "desc": "Dissection hall, museum, histology lab, and body painting/model making educational activities." },
+        { "name": "Physiology", "head": "Professor & HOD", "desc": "Clinical physiology, hematology, amphibian labs, and student research projects." },
+        { "name": "Biochemistry", "head": "Professor & HOD", "desc": "Central diagnostic biochemistry support, automated analyzers, and metabolic research." }
+      ]
+    },
+    {
+      "title": "Para-Clinical Departments",
+      "departments": [
+        { "name": "Pathology", "head": "Professor & HOD", "desc": "Histopathology, cytopathology, hematology lab, and IPD/OPD sample analysis." },
+        { "name": "Microbiology", "head": "Professor & HOD", "desc": "Bacteriology, serology, virology, COVID testing lab, and infection control unit." },
+        { "name": "Pharmacology", "head": "Professor & HOD", "desc": "Experimental pharmacology, pharmacy museum, and Pharmacovigilance committee cell." },
+        { "name": "Forensic Medicine & Toxicology", "head": "Professor & HOD", "desc": "Medico-legal post-mortem services, toxicology museum, and expert testimony." },
+        { "name": "Community Medicine", "head": "Professor & HOD", "desc": "Rural & Urban health training centers, NMC family adoption program, and immunisation camps." }
+      ]
+    },
+    {
+      "title": "Clinical Departments & Hospital Services",
+      "departments": [
+        { "name": "General Medicine", "head": "Professor & HOD", "desc": "Comprehensive OPD/IPD care, intensive medical care unit (ICU), and emergency medicine." },
+        { "name": "General Surgery", "head": "Professor & HOD", "desc": "Major & minor operation theatres, laparoscopic surgery, trauma care, and casualty." },
+        { "name": "Obstetrics & Gynecology", "head": "Professor & HOD", "desc": "Labour ward, antenatal care, NICU linkage, and maternal health welfare." },
+        { "name": "Paediatrics", "head": "Professor & HOD", "desc": "NICU, PICU, immunization clinics, and adolescent pediatric care." },
+        { "name": "Orthopaedics", "head": "Professor & HOD", "desc": "Trauma management, joint replacement, arthroscopy, and plaster/fracture clinics." },
+        { "name": "Ophthalmology", "head": "Professor & HOD", "desc": "Cataract surgeries (SICS/Phaco), glaucoma unit, and eye bank coordination." },
+        { "name": "Oto-Rhino-Laryngology (ENT)", "head": "Professor & HOD", "desc": "Audiometry, speech therapy, endoscopic sinus surgeries, and head-neck care." },
+        { "name": "Dermatology, Venereology & Leprosy", "head": "Professor & HOD", "desc": "Skin OPD, phototherapy, STD clinic, and dermatopathology." },
+        { "name": "Psychiatry", "head": "Professor & HOD", "desc": "Mental health OPD, psychiatric ward, counseling, and student stress relief cell." },
+        { "name": "Radiodiagnosis", "head": "Professor & HOD", "desc": "Digital X-Ray, USG, CT scan facilities, and radiographic film processing." },
+        { "name": "Anesthesiology", "head": "Professor & HOD", "desc": "OT anesthesia, pain clinic, ICU ventilation support, and CPR training units." }
+      ]
+    }
+  ]
+}
